@@ -1,6 +1,8 @@
 # 赛博花柳生成器
 
 本项目是一个本地订单截图生成器，复刻小黑盒平台的“生化危机 9 豪华版”订单完成页，包含静态页面与 Node 服务端截图能力，用于生成固定尺寸的订单页面 PNG 图像。
+<img width="1219" height="1772" alt="订单截图" src="https://github.com/user-attachments/assets/ab8ebe0f-49b0-4692-b01a-6832a3deed4e" />
+
 
 ## 产品功能
 
