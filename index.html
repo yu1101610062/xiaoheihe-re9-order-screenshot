@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1219, initial-scale=1" />
+    <title>订单已完成</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <header class="header">
+        <div class="title">订单已完成</div>
+        <div class="subtitle">感谢您对小黑盒的信任，详情可在黑盒商城-我的订单中查看</div>
+      </header>
+
+      <section class="card card-1">
+        <div class="card1-row">
+          <svg class="icon-search" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="20" cy="20" r="12" fill="none" stroke="#d6d8dc" stroke-width="4" />
+            <line x1="29" y1="29" x2="40" y2="40" stroke="#d6d8dc" stroke-width="4" stroke-linecap="round" />
+          </svg>
+          <div class="card1-title">生化危机9:安魂曲 豪华版</div>
+          <div class="card1-cta">
+            <span>前往激活</span>
+            <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true">
+              <polyline points="5,3 11,8 5,13" fill="none" stroke="#6b6d71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="code-panel">
+          <img class="steam-icon" src="steam_logo.png" alt="Steam" />
+          <div class="code-text">XXXXX-XXXXX-XXXXX</div>
+          <div class="send-text">发送到PC</div>
+          <div class="copy-btn">
+            <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="7" y="5" width="12" height="14" rx="2" ry="2" fill="none" stroke="#1a1e23" stroke-width="2" />
+              <rect x="4" y="8" width="12" height="12" rx="2" ry="2" fill="none" stroke="#1a1e23" stroke-width="2" />
+            </svg>
+            <span>复制</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-2">
+        <div class="cover">
+          <img src="生化危机9游戏封面.png" alt="生化危机9:安魂曲 豪华版" />
+        </div>
+        <div class="card2-title">生化危机9:安魂曲 豪华版</div>
+        <div class="card2-sub">数量×1；生化危机9:安魂曲 豪华版；CDKEY</div>
+        <div class="card2-sub secondary">CDKEY国区账号激活；不支持7天无理由退货</div>
+        <div class="card2-price">￥ 398.00</div>
+      </section>
+
+      <section class="card card-3">
+        <div class="card3-title">价格明细</div>
+        <div class="row row-1">
+          <span class="label">商品总价</span>
+          <span class="value">￥ 398.00</span>
+        </div>
+        <div class="row row-2">
+          <span class="label">优惠券</span>
+          <span class="value">- ￥39.80</span>
+        </div>
+        <div class="row row-3">
+          <span class="label">H币抵现</span>
+          <span class="value">- ￥0.00</span>
+        </div>
+        <div class="row row-4">
+          <span class="label">支付方式</span>
+          <span class="value">支付宝支付</span>
+        </div>
+        <div class="divider"></div>
+        <div class="row row-total">
+          <span class="label">实付款</span>
+          <span class="value total">￥ 358.20</span>
+        </div>
+      </section>
+    </div>
+    <button class="capture-btn" id="capture-trigger" type="button">生成截图</button>
+    <div class="modal hidden" id="cdkey-modal" role="dialog" aria-modal="true" aria-labelledby="cdkey-title">
+      <div class="modal-card">
+        <div class="modal-title" id="cdkey-title">输入CDKEY</div>
+        <input class="modal-input" id="cdkey-input" type="text" autocomplete="off" />
+        <div class="modal-actions">
+          <button class="btn secondary" id="cdkey-cancel" type="button">取消</button>
+          <button class="btn primary" id="cdkey-confirm" type="button">确认</button>
+        </div>
+      </div>
+    </div>
+    <script src="capture.js"></script>
+  </body>
+</html>
